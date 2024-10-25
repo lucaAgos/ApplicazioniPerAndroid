@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         //La classe R è self imported e gestita da andorid studio.
         //La classe R viene utilizzata per aggiungere componenti in modo dinamico
         setContentView(R.layout.activity_main); //Associa un activity ad un layout
-        System.out.println(R.id.scrittaCiao);
+       // System.out.println(R.id.scrittaCiao);
       //  TextView scrittaCiao = findViewById(R.id.scrittaCiao);
 
     }

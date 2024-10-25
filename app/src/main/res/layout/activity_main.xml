@@ -4,87 +4,33 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/card"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="30dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <!-- Media -->
-
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="194dp"
-                android:contentDescription="Descrizione"
+                android:layout_width="30dp"
+                android:layout_height="300dp"
                 android:scaleType="centerCrop"
-
+                android:layout_weight="0.3"
                 app:srcCompat="@drawable/ic_launcher_background"/>
-            <!-- Sistema Hardcoded da  -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
 
-                <!-- Title, secondary and supporting text -->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Titolo secondario"
-                    android:textAppearance="?attr/textAppearanceTitleMedium"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="Prima caption"
-                    android:textAppearance="?attr/textAppearanceBodyMedium"
-                    android:textColor="?android:attr/textColorSecondary"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:text="Seconda Caption"
-                    android:textAppearance="?attr/textAppearanceBodyMedium"
-                    android:textColor="?android:attr/textColorSecondary"
-                    />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:layout_weight="0.3"
 
-            </LinearLayout>
+        app:srcCompat="@drawable/ic_launcher_background"/>
 
-            <!-- Buttons -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:orientation="horizontal">
-                <com.google.android.material.button.MaterialButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:text="caption finale 1"
-                    style="?attr/borderlessButtonStyle"
-                    />
-                <com.google.android.material.button.MaterialButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="caption finale 2"
-                    style="?attr/borderlessButtonStyle"
-                    />
-            </LinearLayout>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:layout_weight="0.3"
 
-        </LinearLayout>
+        app:srcCompat="@drawable/ic_launcher_background"/>
 
-    </com.google.android.material.card.MaterialCardView>
 
 </LinearLayout>
