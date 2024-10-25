@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Un file che mi permette di andare a fare restituire tramite
+ la chiave name, il corrispettivo colore che verrà utilizzato per
+ l'applicazione -->
+
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

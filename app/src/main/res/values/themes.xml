@@ -1,0 +1,8 @@
+<resources  xmlns:tools="http://schemas.android.com/tools">
+  <!-- Crea un nuovo stile per l'applicazione, ereditando lo stile base dal Material3-->
+    <style name="Base.Theme.PrimaApplicazioneAndroid" parent="Theme.Material3.DayNight.NoActionBar">
+
+    </style>
+
+    <style name="Theme.PrimaApplicazioneAndroid" parent="Base.Theme.PrimaApplicazioneAndroid" />
+</resources>

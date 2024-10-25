@@ -1,0 +1,14 @@
+<!--Mi permette di dichiarare un testo
+ che poi potrà essere stampato ricercato
+ tramite il suo nome univoco-->
+<!-- Posso associare alla stessa chiave diverse stringhe magari
+per creare la versione dell'applicazione in un altra lingua.
+In base alla lingua selezionata del dispositivo android recupera
+in automatico la stringa con la lingua corretta se prsente, altrimenti
+prende quella di default.
+-->
+<resources>
+    <string name="app_name">PrimaApplicazioneAndroid</string>
+    <string name="testo1">I am a text</string>
+
+</resources>
