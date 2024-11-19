@@ -1,36 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--E' un contenitore che permtte di accettare delle view-->
+<!-- Viene utilizzato per dare del margine iniziale sulla sinistra -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginStart="20dp"
+    android:orientation="vertical"
+
+
     tools:context=".MainActivity">
 
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="300dp"
-                android:scaleType="centerCrop"
-                android:layout_weight="0.3"
-                app:srcCompat="@drawable/ic_launcher_background"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello world"
+        android:padding="30dp"
+        />
 
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="300dp"
-        android:scaleType="centerCrop"
-        android:layout_weight="0.3"
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ciaoo" />
 
-        app:srcCompat="@drawable/ic_launcher_background"/>
-
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="300dp"
-        android:scaleType="centerCrop"
-        android:layout_weight="0.3"
-
-        app:srcCompat="@drawable/ic_launcher_background"/>
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Push me"/>
 
 </LinearLayout>

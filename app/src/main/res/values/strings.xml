@@ -8,7 +8,8 @@ in automatico la stringa con la lingua corretta se prsente, altrimenti
 prende quella di default.
 -->
 <resources>
-    <string name="app_name">PrimaApplicazioneAndroid</string>
+    <string name="app_name">first Android application</string>
     <string name="testo1">I am a text</string>
+    <string name="pick_a_country"> pick a country</string>
 
 </resources>
