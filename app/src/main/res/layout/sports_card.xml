@@ -5,7 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    android:id="@+id/country_card"
+    android:id="@+id/sports_card"
+    android:focusable="true"
+    android:clickable="true"
+    android:checkable="true"
     >
 
 
@@ -20,7 +23,7 @@
             android:layout_height="194dp"
             android:contentDescription="@string/content_description_media"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/italy" />
+            app:srcCompat="@drawable/f1_immagine" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -32,33 +35,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Italy"
+                android:text="@string/category_sport"
                 android:textAppearance="?attr/textAppearanceTitleMedium"
                 />
 
 
         </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
 
-        <!-- Title, secondary and supporting text -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Descrizione"
-            />
-        <!-- Buttons -->
-
-
-    </LinearLayout>
 
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>
-
-
-
-

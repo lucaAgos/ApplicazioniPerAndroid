@@ -1,5 +1,5 @@
 <!--Mi permette di dichiarare un testo
- che poi potrà essere stampato ricercato
+ che poi potrà essere stampato. Viene ricercato
  tramite il suo nome univoco-->
 <!-- Posso associare alla stessa chiave diverse stringhe magari
 per creare la versione dell'applicazione in un altra lingua.
@@ -10,6 +10,18 @@ prende quella di default.
 <resources>
     <string name="app_name">first Android application</string>
     <string name="testo1">I am a text</string>
-    <string name="pick_a_country"> pick a country</string>
+    <string name="pick_a_country"> Pick a country</string>
+    <string name="Italy"> Italy</string>
+    <string name="pick_categories"> Pick some categories</string>
+    <string name="category_sport"> Pick sport</string>
+    <string name="health_care"> Pick  health care</string>
+    <string name="have_already_an_account">Have already an account?</string>
+    <string name="E_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="welcome">Welcome</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="sign_in">Sign in</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

@@ -8,21 +8,13 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class PickCountryActivity extends AppCompatActivity {
+public class category_card extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-       // EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_pick_country);
-        try{
-            String email = savedInstanceState.getString("EMAIL_KEY");
-
-        }catch (Exception e){
-
-        }
-
-
+      //  EdgeToEdge.enable(this);
+       // setContentView(R.layout.category_card);
 
     }
 }

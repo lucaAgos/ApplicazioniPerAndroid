@@ -13,20 +13,31 @@
         android:theme="@style/Theme.PrimaApplicazioneAndroid"
         tools:targetApi="31">
         <activity
-            android:name=".PickCountryActivity"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".health_card"
+            android:exported="false" />
+        <activity
+            android:name=".sports_card"
+            android:exported="false" />
+        <activity
+            android:name=".category_card"
+            android:exported="false" />
+        <activity
+            android:name=".PickCategoriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PickCountryActivity"
+            android:exported="false">
 
         </activity>
+
     </application>
 
 </manifest>
