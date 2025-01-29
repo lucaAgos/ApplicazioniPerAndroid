@@ -11,6 +11,7 @@ import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import android.provider.MediaStore;
 import android.util.Log;
@@ -98,54 +99,11 @@ public class LoginFragment extends Fragment {
            //In questo caso il pulsante è creato staticamente, nell a GUI rispetto
            Log.d(bottonePremuto.getClass().getName(),"Bottone premuto: " +bottonePremuto.getId());
 
+           /**/
            if(checkCredential(emailField.getText().toString(),passwordField.getText().toString())){
                Log.d( this.getClass().getName(),"Accedi alla dashboard");
-
-               Intent intent = new Intent(this,PickCountryActivity.class);
-               savedInstanceState.putString("EMAIL_KEY",emailField.getText().toString());
-               //Salvo nell'oggetto savedInstanceState la mail da passare all'altra pagina
-               super.startActivity(intent); //Esegue il trasferimento*/
-
-                 /*
-                 Uri gmmIntentUri = Uri.parse("google.streetview:cbll=46.414382,10.013988");
-                 // Creare un Intent con l'azione ACTION_VIEW e l'URI specificato
-                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-
-                // Rendere esplicito l'Intent specificando il pacchetto dell'app Google Maps
-                 mapIntent.setPackage("com.google.android.apps.maps");
-
-                // Avviare un'attività che può gestire l'Intent
-                 startActivity(mapIntent);*/
-
-
-                 /*Questo codice permette di andare a far selezionare all'utente un file (immagine)
-                 Succesivamnte eseguire delle operazioni, ANCHE CON IL FILE CHE L'UTENTE HA SELEZIONATO
-                 */
-                 /*In questo specifico caso il sistema operativo trova l'applicazione adeguata per andare
-                 a mostrare all'utente le immagini disponibili */
-              /*
-               ActivityResultLauncher<String> launcher = super.registerForActivityResult(
-                       new ActivityResultContracts.GetContent(), // Contratto per ottenere un contenuto
-                       new ActivityResultCallback<Uri>() {
-                           @Override
-                           public void onActivityResult(Uri uri) {
-                               try{
-                                   Bitmap b = MediaStore.Images.Media.getBitmap(getContentResolver(),uri);
-                                   ((ImageView)view.findViewById(R.id.imageView)).setImageBitmap(b);
-
-                               }catch (FileNotFoundException e){
-                                   Log.d( this.getClass().getName(),"Impossibile trovare il file");
-
-                               }catch(IOException e){
-                                   Log.d( this.getClass().getName(),"Errore generale");
-
-                               }
-
-                           }
-                       }
-               );*/
-
-
+               /*Gestisce il passaggio da un fragment ad un'activity*/
+               Navigation.findNavController(bottonePremuto).navigate(R.id.action_loginFragment_to_pickCountryActivity);
 
            }else{
                Log.d( this.getClass().getName(),"Errore inserimento");

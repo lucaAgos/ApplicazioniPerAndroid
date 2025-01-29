@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- Rappresenta a tutti gli effetti il grafo di navigazione.
+    Dispone di un proprio id, per essere riconoscito nell'intero ambiente.
+     Ha un ID (@+id/nav_graph).
+     Imposta la destinazione iniziale con app:startDestination="@id/loginFragment",
+     quindi il primo schermo che appare è loginFragment.
+
+     Definisce un frammento (LoginFragment).
+     Importa il frammento definito fragment_login.xml.
+     Ha un'etichetta "LoginFragment", usata per scopi di debugging o UI
+
+     Definisce un'azione di navigazione (@id/action_loginFragment_to_pickCategoriesActivity).
+     Questa azione permette di spostarsi da loginFragment a pickCategoriesActivity
+     e di mostrare la relativa activity_layout
+
+-->
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,13 +26,13 @@
   tools:layout="@layout/fragment_login"
   android:label="LoginFragment">
      <action
-         android:id="@+id/action_loginFragment_to_pickCategoriesActivity"
-         app:destination="@id/pickCategoriesActivity" />
+         android:id="@+id/action_loginFragment_to_pickCountryActivity"
+         app:destination="@id/pickCountryActivity" />
  </fragment>
     <activity
-        android:id="@+id/pickCategoriesActivity"
-        android:name="com.example.primaapplicazioneandroid.PickCategoriesActivity"
-        android:label="activity_pick_categories"
-        tools:layout="@layout/activity_pick_categories" />
+        android:id="@+id/pickCountryActivity"
+        android:name="com.example.primaapplicazioneandroid.PickCountryActivity"
+        android:label="activity_pick_country"
+        tools:layout="@layout/activity_pick_country" />
 
 </navigation>
